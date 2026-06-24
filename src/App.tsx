@@ -8,9 +8,9 @@
 //   NavigationMenuTrigger,
 //   navigationMenuTriggerStyle
 // } from "./components/ui/navigation-menu";
-import NavBar from "./components2/navBar";
+// import NavBar from "./components2/navBar";
 // import docalign from "./images/docalign-pnz85o4s8x1va7og9rruwpsvi6u966jrvexgy56ry8.png"
-import { BrowserRouter, Routes , Route} from "react-router-dom"
+import { HashRouter, Routes , Route} from "react-router-dom"
 import LandingPage from "./pages/landingPage";
 import LayOut from "./layout/layout";
 import "slick-carousel/slick/slick.css";
@@ -21,13 +21,13 @@ function App() {
   return (
     <>
 
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<LayOut />}>
             <Route index element={<LandingPage />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
 
     {/* <NavBar /> */}

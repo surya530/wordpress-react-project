@@ -23,9 +23,11 @@
     font-size: 20px;
   }
 
+
   
 
 @theme inline {
+    --font-playfair: "Playfair Display", sans-serif;
     --font-heading: var(--font-sans);
     --font-sans: 'Geist Variable', sans-serif;
     --color-sidebar-ring: var(--sidebar-ring);

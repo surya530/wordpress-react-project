@@ -2,7 +2,7 @@
 
 import React from "react";
 
-let Footer : React.FC<any> = (props)=>{
+let Footer : React.FC<any> = (_props)=>{
 
     return(
         <React.Fragment>

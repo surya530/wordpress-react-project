@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components2/fotter";
 
 
-let LayOut : React.FC<any> = (props)=>{
+let LayOut : React.FC<any> = (_props)=>{
     return(
         <React.Fragment>
                 {/* <NavBar />

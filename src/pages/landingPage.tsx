@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Button } from "../components/ui/button";
+// import { Button } from "../components/ui/button";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
@@ -15,11 +15,11 @@ import client6 from "../images/client6.png"
 import client7 from "../images/client7.png"
 import client8 from "../images/client8.png"
 import client9 from "../images/client9.png"
-import Footer from "../components2/fotter";
+// import Footer from "../components2/fotter";
 
-let LandingPage : React.FC<any> = (props)=>{
+let LandingPage : React.FC<any> = (_props)=>{
 
-    let [ourCustomers , setOurCustomers] = React.useState([
+    let [ourCustomers , _setOurCustomers] = React.useState([
         weka_1,
         client,
         client2,
@@ -71,6 +71,66 @@ let LandingPage : React.FC<any> = (props)=>{
             </div>
 
 
+                              <div className="mt-10">
+                                                <div className="max-w-7xl mx-auto">
+                                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                                                    
+                                                    {/* Left Column - Prepress and Premedia */}
+                                                    <div>
+                                                        <h2 className="text-2xl font-bold text-teal-600 mb-6">
+                                                        Prepress and Premedia Formatting
+                                                        </h2>
+                                                        
+                                                        <p className="text-gray-700 mb-4">
+                                                        We offer <span className="text-pink-500">text conversion services</span> for books, articles, trade journals, and catalogs.
+                                                        </p>
+                                                        
+                                                        <p className="text-gray-700 mb-6">
+                                                        Your files can simultaneously be converted into:
+                                                        </p>
+                                                        
+                                                        <div className="bg-white rounded-lg p-4 mb-6 border-l-4 border-teal-600">
+                                                        <p className="text-gray-800 font-semibold">
+                                                            Print PDF | ePub | Developer-Specific XML (INDD, IDML)
+                                                        </p>
+                                                        <p className="text-gray-700 mt-2">
+                                                            ebook (EPUB, AZW, mobi, Screen PDF)
+                                                        </p>
+                                                        </div>
+                                                        
+                                                        <p className="text-gray-700 mb-4">
+                                                        Because many steps are fully automated and based on geometric measures, we can offer high precision typesetting or other high precision typesetting needs.
+                                                        </p>
+                                                    </div>
+
+                                                    {/* Right Column - Custom Software Solutions */}
+                                                    <div>
+                                                        <h2 className="text-2xl font-bold text-teal-600 mb-6">
+                                                        Custom Software Solutions
+                                                        </h2>
+                                                        
+                                                        <p className="text-gray-700 mb-6">
+                                                        High-value custom solutions to give your company better performance, scalable solutions, and a happier, more efficient production team.
+                                                        </p>
+                                                        
+                                                        <p className="text-gray-700 mb-4">
+                                                        Our developers, designers, and product team will help you plan your digitization, production, and optimization roadmap using open standards – so that you can evolve and grow trusting the solutions in place are durable and efficient.
+                                                        </p>
+                                                        
+                                                        <p className="text-gray-700">
+                                                        <span className="text-pink-500"> Our experience</span> spans over decades and in many areas of software development and operations.
+                                                        </p>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                            </div>
+
+
+
+
+
+
+
                         <div className="bg-[#F8F9FC] py-20" >
                             <div className="text-[#5298D2] text-center text-3xl font-semibold">Our Customers</div>
                             <div className="text-center mt-6" >We have long-standing partnerships with many well-established publishers in Germany and beyond.</div>
@@ -102,7 +162,7 @@ let LandingPage : React.FC<any> = (props)=>{
 
                                 <span className="text-xl font-semibold" >H. Hohenester</span>
                                 <br />
-                                <span>Managing Director, Schwaneberger Verlag</span>
+                                <span className="font-playfair italic text-blue-400" >Managing Director, Schwaneberger Verlag</span>
                             </div>
 
 
@@ -119,7 +179,7 @@ let LandingPage : React.FC<any> = (props)=>{
 
                                 <span className="text-xl font-semibold">S. Selle</span>
                                 <br />
-                                <span>Managing Director, Zweitwerk</span>
+                                <span className="font-playfair italic text-blue-400" >Managing Director, Zweitwerk</span>
                             </div>
 
 
@@ -136,7 +196,7 @@ let LandingPage : React.FC<any> = (props)=>{
 
                                 <span className="text-xl font-semibold" >Dr. W. Andreae</span>
                                  <br />
-                                <span>Managing Director, Lexxion</span>
+                                <span className="font-playfair italic text-blue-400" >Managing Director, Lexxion</span>
                             </div>
 
                             </Carousel>

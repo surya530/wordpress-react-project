@@ -3,10 +3,10 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
+  // NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle
+  // navigationMenuTriggerStyle
 } from "../components/ui/navigation-menu";
 import docalign from "../images/docalign-pnz85o4s8x1va7og9rruwpsvi6u966jrvexgy56ry8.png"
 
