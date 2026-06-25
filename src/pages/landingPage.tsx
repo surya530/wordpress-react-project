@@ -33,11 +33,14 @@ let LandingPage : React.FC<any> = (_props)=>{
     ]);
 
 
+    let yes = ()=>{
+        window.open("https://docalign.io/", "_blank");
+    }
 
 
     return(
         <React.Fragment>
-            <div className="flex justify-around" >
+            <div className="hidden justify-around  md:flex" >
 
 
                     <div className="flex items-center gap-6" >
@@ -55,7 +58,7 @@ let LandingPage : React.FC<any> = (_props)=>{
                     </div> */}
 
                     <div className="flex items-center gap-6" >
-                      <button className="bg-orange-400 p-3 text-white rounded-sm shadow-xl">For Self Publishers</button>
+                      <button className="bg-orange-400 p-3 text-white rounded-sm shadow-xl" onClick={yes} >For Self Publishers</button>
                         <button className="bg-blue-600 p-3 text-white rounded-sm flex gap-1 items-center shadow-xl ">
                                 Get a Quote
                             <FaArrowRightLong />
@@ -71,61 +74,48 @@ let LandingPage : React.FC<any> = (_props)=>{
             </div>
 
 
-                              <div className="mt-10">
-                                                <div className="max-w-7xl mx-auto">
-                                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                                                    
-                                                    {/* Left Column - Prepress and Premedia */}
-                                                    <div>
-                                                        <h2 className="text-2xl font-bold text-teal-600 mb-6">
-                                                        Prepress and Premedia Formatting
-                                                        </h2>
-                                                        
-                                                        <p className="text-gray-700 mb-4">
-                                                        We offer <span className="text-pink-500">text conversion services</span> for books, articles, trade journals, and catalogs.
-                                                        </p>
-                                                        
-                                                        <p className="text-gray-700 mb-6">
-                                                        Your files can simultaneously be converted into:
-                                                        </p>
-                                                        
-                                                        <div className="bg-white rounded-lg p-4 mb-6 border-l-4 border-teal-600">
-                                                        <p className="text-gray-800 font-semibold">
-                                                            Print PDF | ePub | Developer-Specific XML (INDD, IDML)
-                                                        </p>
-                                                        <p className="text-gray-700 mt-2">
-                                                            ebook (EPUB, AZW, mobi, Screen PDF)
-                                                        </p>
-                                                        </div>
-                                                        
-                                                        <p className="text-gray-700 mb-4">
-                                                        Because many steps are fully automated and based on geometric measures, we can offer high precision typesetting or other high precision typesetting needs.
-                                                        </p>
-                                                    </div>
-
-                                                    {/* Right Column - Custom Software Solutions */}
-                                                    <div>
-                                                        <h2 className="text-2xl font-bold text-teal-600 mb-6">
-                                                        Custom Software Solutions
-                                                        </h2>
-                                                        
-                                                        <p className="text-gray-700 mb-6">
-                                                        High-value custom solutions to give your company better performance, scalable solutions, and a happier, more efficient production team.
-                                                        </p>
-                                                        
-                                                        <p className="text-gray-700 mb-4">
-                                                        Our developers, designers, and product team will help you plan your digitization, production, and optimization roadmap using open standards – so that you can evolve and grow trusting the solutions in place are durable and efficient.
-                                                        </p>
-                                                        
-                                                        <p className="text-gray-700">
-                                                        <span className="text-pink-500"> Our experience</span> spans over decades and in many areas of software development and operations.
-                                                        </p>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                            </div>
+                                <div className="grid grid-row-1 md:grid-cols-2 xl:px-48 px-10 gap-16 mt-10" >
 
 
+                                    <div className="" >
+                                        <h2 className="text-4xl text-center text-[#2d7789]">Prepress and Premedia Formatting</h2>
+
+                                        <p className="text-xl mt-4 text-left" >
+                                            We offer <span className="text-pink-500"> text conversion services </span> for books, articles, trade journals, and catalogs.
+                                        </p>
+
+                                        <p className="text-xl mt-4 text-left" >
+                                            Your files can simultaneously be converted into:
+                                        </p>
+                                        
+                                        <p className="text-xl font-bold mt-4 text-left" >
+                                            Print PDF | Online PDF | Device-specific PDF | HTML5 | eBook (EPUB, AZW, mobi, Screen PDF)
+                                        </p>
+
+                                        <p className="text-xl mt-4 text-left" >
+                                            Because many steps are fully automated and based on geometrical measures, we can offer high precision typesetting for very <span className="text-pink-500"> reasonable prices. </span> 
+                                        </p>
+                                    </div>
+
+
+                                    <div>
+                                        <h2 className="text-4xl text-center text-[#2d7789]">Custom Software Solutions</h2>
+                                        <p className="text-xl mt-4 text-left" >
+                                            High-value custom solutions to give your company better performance, scalable solutions, and a happier, more efficient production team.
+                                        </p>
+
+                                        <p className="text-xl mt-4 text-left" >
+                                            Our developers, designers, and product team will help you plan your digitization, production, and optimization using open stardards – so that you can evolve and grow trusting the solutions in place are durable and efficient. 
+                                        </p>
+
+                                        <p className="text-xl mt-4 text-left" >
+                                           <span className="text-pink-500"> Our experience </span> spans over decades and in many areas of software development and operations.  
+                                        </p>
+
+
+                                    </div>
+
+                                </div>
 
 
 

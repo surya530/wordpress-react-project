@@ -8,10 +8,16 @@ import {
   NavigationMenuTrigger,
   // navigationMenuTriggerStyle
 } from "../components/ui/navigation-menu";
+import { VscThreeBars } from "react-icons/vsc";
 import docalign from "../images/docalign-pnz85o4s8x1va7og9rruwpsvi6u966jrvexgy56ry8.png"
+import React from "react";
 
 
-function NavBar() {
+
+let NavBar : React.FC<any> = (props:any)=>{
+
+  // let openSidebar = ()=>{ alert(30); }
+
 
   return (
     <>
@@ -28,51 +34,56 @@ function NavBar() {
 
 
 
-      <div className="flex items-center gap-2">
+      <div className="hidden sm:visible sm:flex items-center gap-2 ">
 
-  {/* Dropdown item */}
-  <NavigationMenu>
-    <NavigationMenuList>
-      <NavigationMenuItem>
-        <NavigationMenuTrigger className="font-semibold text-[#226878]">
-          Typesetting and Formatting
-        </NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <div className="w-36 flex flex-col gap-3 p-2 font-semibold text-sm">
-            <p>How It Works</p>
-            <p>Pricing</p>
-          </div>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-    </NavigationMenuList>
-  </NavigationMenu>
+                {/* Dropdown item */}
+                <NavigationMenu>
+                  <NavigationMenuList>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger className="font-semibold text-[#226878]">
+                        Typesetting and Formatting
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="w-36 flex flex-col gap-3 p-2 font-semibold text-sm">
+                          <p>How It Works</p>
+                          <p>Pricing</p>
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
 
-  {/* Plain links */}
-  <span className="font-semibold text-[#226878] px-3 text-sm">Custom Software Solutions</span>
-  <span className="font-semibold text-[#226878] px-3 text-sm">Additional Services</span>
+                {/* Plain links */}
+                <span className="font-semibold text-[#226878] px-3 text-sm">Custom Software Solutions</span>
+                <span className="font-semibold text-[#226878] px-3 text-sm">Additional Services</span>
 
-  {/* Separate NavigationMenu so viewport anchors to THIS trigger */}
-  <NavigationMenu className="hidden md:flex">
-    <NavigationMenuList>
-      <NavigationMenuItem>
-        <NavigationMenuTrigger className="font-semibold text-[#226878]">
-          About Us
-        </NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <div className="w-36 flex flex-col gap-3 p-2 font-semibold text-sm">
-            <p>Contact Us</p>
-            <p>Case Studies</p>
-            <p>LinkdIn</p>
-            <p>facebook</p>
-          </div>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-    </NavigationMenuList>
-  </NavigationMenu>
+                {/* Separate NavigationMenu so viewport anchors to THIS trigger */}
+                <NavigationMenu className="hidden md:flex">
+                  <NavigationMenuList>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger className="font-semibold text-[#226878]">
+                        About Us
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="w-36 flex flex-col gap-3 p-2 font-semibold text-sm">
+                          <p>Contact Us</p>
+                          <p>Case Studies</p>
+                          <p>LinkdIn</p>
+                          <p>facebook</p>
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
 
-  <span className="font-semibold text-[#226878] px-3 text-sm">Blog</span>
+                <span className="font-semibold text-[#226878] px-3 text-sm">Blog</span>
 
-</div>
+    </div>
+
+
+    <div className="visible sm:hidden" onClick={props.openCloseDrower} >
+          <VscThreeBars />
+    </div>
 
     </div>
   </div>

@@ -6,6 +6,13 @@ import Footer from "../components2/fotter";
 
 
 let LayOut : React.FC<any> = (_props)=>{
+
+
+    let openCloseDrower = ()=>{
+        alert('open close pop-up');
+    }
+
+
     return(
         <React.Fragment>
                 {/* <NavBar />
@@ -13,7 +20,7 @@ let LayOut : React.FC<any> = (_props)=>{
                 <Outlet />
                 <Footer /> */}
                  <div className="min-h-screen flex flex-col">
-                        <NavBar />
+                        <NavBar openCloseDrower={openCloseDrower} />
 
                         <main className="flex-1 mt-24">
                             <Outlet />
