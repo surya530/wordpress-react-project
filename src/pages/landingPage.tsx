@@ -15,6 +15,8 @@ import client6 from "../images/client6.png"
 import client7 from "../images/client7.png"
 import client8 from "../images/client8.png"
 import client9 from "../images/client9.png"
+// import { CollapsibleFileTree } from "../components2/treeView";
+import { useNavigate } from "react-router-dom";
 // import Footer from "../components2/fotter";
 
 let LandingPage : React.FC<any> = (_props)=>{
@@ -37,6 +39,7 @@ let LandingPage : React.FC<any> = (_props)=>{
         window.open("https://docalign.io/", "_blank");
     }
 
+    let navigate = useNavigate();
 
     return(
         <React.Fragment>
@@ -59,7 +62,7 @@ let LandingPage : React.FC<any> = (_props)=>{
 
                     <div className="flex items-center gap-6" >
                       <button className="bg-orange-400 p-3 text-white rounded-sm shadow-xl" onClick={yes} >For Self Publishers</button>
-                        <button className="bg-blue-600 p-3 text-white rounded-sm flex gap-1 items-center shadow-xl ">
+                        <button className="bg-blue-600 p-3 text-white rounded-sm flex gap-1 items-center shadow-xl" onClick={()=>{navigate("/contact-us");}} >
                                 Get a Quote
                             <FaArrowRightLong />
                         </button>
@@ -193,7 +196,6 @@ let LandingPage : React.FC<any> = (_props)=>{
                             </div>
 
                         </div>
-
 
 
         </React.Fragment>
